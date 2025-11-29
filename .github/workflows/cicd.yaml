@@ -41,7 +41,7 @@ jobs:
         shell: bash
         run: |
           echo ${{needs.ci.outputs.commit_id}}
-          pip install yq
+          pip install yq --break-system-packages
           yq -Yi '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/my-python-app/values.yaml
 
 

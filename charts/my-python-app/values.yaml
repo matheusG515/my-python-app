@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: matheus515/my-python-app
   pullPolicy: IfNotPresent
-  tag: v1
+  tag: d45262
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
